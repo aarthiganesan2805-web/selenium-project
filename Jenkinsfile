@@ -1,14 +1,11 @@
 pipeline {
     agent any
 
-    stages {
+    tools {
+        maven 'Maven'
+    }
 
-        stage('Checkout') {
-            steps {
-                git branch: 'main',
-                    url: 'https://github.com/aarthiganesan2805-web/selenium-project.git'
-            }
-        }
+    stages {
 
         stage('Build') {
             steps {
