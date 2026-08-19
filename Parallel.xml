@@ -1,0 +1,10 @@
+<suite name="ParallelSuite" parallel="classes" thread-count="2">
+
+    <test name="ParallelTest">
+        <classes>
+            <class name="Parallel.testOne"/>
+            <class name="Parallel.testTwo"/>
+        </classes>
+    </test>
+
+</suite>
